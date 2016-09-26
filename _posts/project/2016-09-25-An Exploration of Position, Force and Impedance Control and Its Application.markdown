@@ -3,7 +3,7 @@ layout: project
 title:  "An Exploration of Position, Force and Impedance Control and Its Application"
 date:   2016-09-25 16:54:46
 - project
-img: portfolio_02.jpg
+img: portfolio_01.jpg
 carousel:
 - single01.jpg
 - single02.jpg
