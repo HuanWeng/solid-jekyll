@@ -2,17 +2,12 @@
 layout: project
 title:  "An Exploration of Position, Force and Impedance Control and Its Application"
 date:   Present
-author: 
-categories:
 - project
-img: portfolio_01.jpg
+img: portfolio_02.jpg
 carousel:
 - single01.jpg
 - single02.jpg
 - single03.jpg
-tagged:
-client:
-website:
 ---
 ####YOUR PROJECT NAME
 An Exploration of Position, Force and Impedance Control and Its Application
