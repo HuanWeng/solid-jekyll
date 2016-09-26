@@ -1,0 +1,2 @@
+Note:
+1. The definition of the picture in the homepage is in the file /_includes/header.html
