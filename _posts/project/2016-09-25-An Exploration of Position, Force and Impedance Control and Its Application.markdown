@@ -11,36 +11,21 @@ carousel:
 - single03.jpg
 ---
 An Exploration of Position, Force and Impedance Control and Its Application
-------------------------------
+-----------------
 
-Team members: Tanay Choudhary, Saurabh Kulkarni, Pradyumna Reddy.   
+As part of [Prof. Kevin Lynch](http://www.mccormick.northwestern.edu/research-faculty/directory/profiles/lynch-kevin.html)'s class, [Robotic Manipulation](http://www.mccormick.northwestern.edu/mechanical/courses/descriptions/449-robotic-manipulation.html), I wrote a Python library of functions to implement the concepts learned in class. The functions span from basic operations on SO(3) and SE(3) elements, screw axes, matrix exponentials, calculating Jacobians, to more advanced algorithmic procedures like numerical inverse kinematics and dynamics, polynomial time-scaling and optimum joint trajectory generation. Head to the repository [here](https://github.com/tanay-bits/robo-lib) for the commented code.   
 
-Deafblind people are excluded from most forms of communication and information. This project, which was selected in the [Texas Instruments India Innovation Challenge 2014](https://e2e.ti.com/group/universityprogram/w/contests/2411.innovation-challenge-india), suggests a novel approach to support the communication and interaction of deafblind individuals, thus fostering their independence.
+Many of these functions were used to [simulate real robots](https://gist.github.com/sherifm/f76cab0e785943f9aadc) - the [UR5](http://www.universal-robots.com/products/ur5-robot/) (6DoF) and [WAM](http://www.barrett.com/DS_WAM.pdf) (7DoF) robotic arms - using their URDF files. Below are some simulations visualized in [RViz](http://wiki.ros.org/rviz) - the 3D visualization tool for ROS.
 
-*   It includes a smart glove that translates the Braille alphabet, which is used almost universally by the literate deafblind population, into text and vice versa, and communicates the message via SMS to a remote contact. 
-*   It enables user to convey simple messages by capacitive touch sensors as input sensors placed on the palmer side of the glove and converted to text by the PC/mobile phone. 
-*   The wearer can perceive and interpret incoming messages by tactile feedback patterns of mini vibrational motors on the dorsal side of the glove. Since tactile sensitivity may vary from user to user, the system can be programmed to adjust the applied intensity via PWM to serve the individual user’s needs. 
-*   We created a simple Android app for the system as well (shown at the end of the video below).  
+UR5 Robot Straight Line End-Effector Trajectory:
+![ee](http://i.giphy.com/FvQo7RQFhoIaQ.gif)
 
-The successful implementation of real-time duplex translation between English and Braille, and communication of the wearable device with a mobile phone/PC opens up new opportunities of information exchange which were hitherto unavailable to deafblind individuals, such as remote communication, as well as parallel one-to many broadcast. The glove also makes communicating with laypersons without knowledge of Braille possible. Perhaps most importantly, it can reduce dependence on trained interpreters (which is the most common but expensive option).  
-
-We also presented a [paper at IEEE International Conference on Pervasive Computing 2015](http://dx.doi.org/10.1109/PERVASIVE.2015.7087033), the slides for which can be found [here](https://docs.google.com/presentation/d/1R4dQdzcAwUj9ac4KicE1NXhzODKzou9lrBKYr4DCpxQ/edit?usp=sharing). Click below to watch the demo video:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ONnZ_HP-dzM" frameborder="0" allowfullscreen></iframe> 
-
-### System Overview:  
-
-[![Input/Output Modes](http://i.imgur.com/wnVoP3r.png?1)](http://i.imgur.com/wnVoP3r.png?1 "Click to see full image")  
-
-[![Prototype Hardware](http://i.imgur.com/bFXVYvd.jpg?1)](http://i.imgur.com/bFXVYvd.jpg?1 "Click to see full image")   
-
-[![Algorithm](http://i.imgur.com/N8BBMIQ.png?1)](http://i.imgur.com/N8BBMIQ.png?1 "Click to see full image")   
-
-[![Wireless](http://i.imgur.com/8kZsEx9.png?1)](http://i.imgur.com/8kZsEx9.png?1 "Click to see full image")  
-
-<br />  
+UR5 Robot Straight Line Joint-Space Trajectory:
+![js](http://i.giphy.com/eX0abp1dbLtKg.gif)
 
 ### Project Dependencies:
 
-![Energia](https://www.ti.com/ww/en/launchpad/img/launchpad-energia-logo.png)&nbsp; &nbsp;
-<img src="http://fizz.kiersmcfarlane.com/wp-content/uploads/2014/02/arduino_logo1.png" alt="Arduino" height="130" width="130">
+<br />  
+
+![Python](https://static.wixstatic.com/media/4df942_8017c46cfbbd47a5b157b97f6764562c.png/v1/fill/w_156,h_46,al_c,usm_0.50_1.20_0.00/4df942_8017c46cfbbd47a5b157b97f6764562c.png)&nbsp; &nbsp;
+<img src="https://raw.githubusercontent.com/ros-visualization/rviz/indigo-devel/images/splash.png" alt="RViz" height="200" width="130">
