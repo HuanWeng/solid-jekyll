@@ -10,22 +10,10 @@ carousel:
 - single02.jpg
 - single03.jpg
 ---
-An Exploration of Position, Force and Impedance Control and Its Application
+####An Exploration of Position, Force and Impedance Control and Its Application
 -----------------
+The goal of this project is applying some control theories on the experiment setup which consists of two parts: Allegro Hand and Optoforce force sensors. Currently I only mounted the force sensor on the index finger as shown in the figure above and realized joint position, contact force and impedance control.
 
-As part of [Prof. Kevin Lynch](http://www.mccormick.northwestern.edu/research-faculty/directory/profiles/lynch-kevin.html)'s class, [Robotic Manipulation](http://www.mccormick.northwestern.edu/mechanical/courses/descriptions/449-robotic-manipulation.html), I wrote a Python library of functions to implement the concepts learned in class. The functions span from basic operations on SO(3) and SE(3) elements, screw axes, matrix exponentials, calculating Jacobians, to more advanced algorithmic procedures like numerical inverse kinematics and dynamics, polynomial time-scaling and optimum joint trajectory generation. Head to the repository [here](https://github.com/tanay-bits/robo-lib) for the commented code.   
+For the control method, the joint position control is already developed in ROS package from Wonik Robotics. In the contact force control, I design an experiment to let the finger apply contact force on a horizontal plane and supposed that there’s no motion when applying force. I first calculated the Jacobian Matrix of the finger and used the dynamics equation to solve the relation between the torque of joints and the contact force on the fingertip, ignoring the acceleration and velocity terms in the equation. By doing these the feedforward loop was completed. Then I used the force data from Optoforce as a feedback to calibrate the contact force by PI control. The figures below show the results of contact force control.
 
-Many of these functions were used to [simulate real robots](https://gist.github.com/sherifm/f76cab0e785943f9aadc) - the [UR5](http://www.universal-robots.com/products/ur5-robot/) (6DoF) and [WAM](http://www.barrett.com/DS_WAM.pdf) (7DoF) robotic arms - using their URDF files. Below are some simulations visualized in [RViz](http://wiki.ros.org/rviz) - the 3D visualization tool for ROS.
-
-UR5 Robot Straight Line End-Effector Trajectory:
-![ee](http://i.giphy.com/FvQo7RQFhoIaQ.gif)
-
-UR5 Robot Straight Line Joint-Space Trajectory:
-![js](http://i.giphy.com/eX0abp1dbLtKg.gif)
-
-### Project Dependencies:
-
-<br />  
-
-![Python](https://static.wixstatic.com/media/4df942_8017c46cfbbd47a5b157b97f6764562c.png/v1/fill/w_156,h_46,al_c,usm_0.50_1.20_0.00/4df942_8017c46cfbbd47a5b157b97f6764562c.png)&nbsp; &nbsp;
-<img src="https://raw.githubusercontent.com/ros-visualization/rviz/indigo-devel/images/splash.png" alt="RViz" height="200" width="130">
+For the impedance control, currently I simplified the model by ignoring the mass and damper properties of the finger. So the whole finger was supposed to be like a virtual spring, as shown below, once setting the stiffness and the original position of the fingertip in 3 directions. This work is applied in other research experiments in my lab.
