@@ -1,13 +1,14 @@
 ---
 layout: project
 title:  "An Exploration of Position, Force and Impedance Control and Its Application"
-date:   2016-09-25 16:54:46
+date:   2016-09-25 16:54:46 -0800
 - project
 img: portfolio_01.jpg
 carousel:
 - single01.jpg
 - single02.jpg
 - single03.jpg
+website: http://blacktie.co
 ---
 ####YOUR PROJECT NAME
 An Exploration of Position, Force and Impedance Control and Its Application
