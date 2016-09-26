@@ -1,16 +1,16 @@
 ---
 layout: project
-title:  "An Exploration of Position, Force and Impedance Control and Its Application"
-date:   2016-09-25 16:54:46
+title:  "Android Line Follower Mobile Robot"
+date:   2016-06-15 16:54:46
 categories:
 - project
-img: portfolio_01.jpg
+img: portfolio_03.jpg
 carousel:
 - single01.jpg
 - single02.jpg
 - single03.jpg
 ---
-An Exploration of Position, Force and Impedance Control and Its Application
+Android Line Follower Mobile Robot
 -----------------
 The goal of this project is applying some control theories on the experiment setup which consists of two parts: Allegro Hand and Optoforce force sensors. Currently I only mounted the force sensor on the index finger as shown in the figure above and realized joint position, contact force and impedance control.
 
