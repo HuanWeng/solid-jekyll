@@ -6,14 +6,15 @@ categories:
 - project
 img: portfolio_09.jpg
 carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
+- portfolio_09.jpg
+- porj09_1.jpg
 ---
-Android Line Follower Mobile Robot
+Key Technology Research on Wheel Hub Bearing
 -----------------
-The goal of this project is applying some control theories on the experiment setup which consists of two parts: Allegro Hand and Optoforce force sensors. Currently I only mounted the force sensor on the index finger as shown in the figure above and realized joint position, contact force and impedance control.
+The preloads of wheel hub bearing affects its working performance and service life. In order to study the action mechanism. the study on the effect of wheel hub bearing preloads on the natural frequency is particularly important. Aiming at a certain type wheel hub bearing, the wheel bearing swept sine vibration test system was built. and the conclusion was got after testing different preload of wheel hub bearing. The figure below shows the frequency response of the wheel hub bearing.
 
-For the control method, the joint position control is already developed in ROS package from Wonik Robotics. In the contact force control, I design an experiment to let the finger apply contact force on a horizontal plane and supposed that there’s no motion when applying force. I first calculated the Jacobian Matrix of the finger and used the dynamics equation to solve the relation between the torque of joints and the contact force on the fingertip, ignoring the acceleration and velocity terms in the equation. By doing these the feedforward loop was completed. Then I used the force data from Optoforce as a feedback to calibrate the contact force by PI control. The figures below show the results of contact force control.
+![proj09_2](/assets/img/project/carousel/proj09_2.jpg)
 
-For the impedance control, currently I simplified the model by ignoring the mass and damper properties of the finger. So the whole finger was supposed to be like a virtual spring, as shown below, once setting the stiffness and the original position of the fingertip in 3 directions. This work is applied in other research experiments in my lab.
+As the fiure shown below, the conclusion is that in the experimental condition, when the preload increases, the first order natural frequency of the wheel hub bearing becomes larger as well. But growth trend of the first order natural frequency becomes smaller with the preload increasing. 
+
+![proj09_3](/assets/img/project/carousel/proj09_3.jpg)
