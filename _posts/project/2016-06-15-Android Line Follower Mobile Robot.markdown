@@ -6,9 +6,11 @@ categories:
 - project
 img: portfolio_03.jpg
 carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
+- portfolio_03.jpg
+- proj03_1.jpg
+- proj03_2.jpg
+- proj03_3.jpg
+- proj03_4.jpg
 ---
 Android Line Follower Mobile Robot
 -----------------
