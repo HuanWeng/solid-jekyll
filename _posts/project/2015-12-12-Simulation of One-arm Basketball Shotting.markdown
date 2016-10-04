@@ -4,11 +4,10 @@ title:  "Simulation of One-arm Basketball Shotting"
 date:   2015-12-12 16:54:46
 categories:
 - project
-img: portfolio_06.jpg
+img: portfolio_06.gif
 carousel:
-- single01.jpg
-- single02.jpg
-- single03.jpg
+- portfolio_06.gif
+- proj06_1.gif
 ---
 Simulation of One-arm Basketball Shotting
 -----------------
