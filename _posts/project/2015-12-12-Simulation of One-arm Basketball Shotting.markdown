@@ -20,4 +20,5 @@ Finally I developed Mathematica program to simulate the process of shooting and 
 For more details please check:
 
 [Project report](https://github.com/HuanWeng/HuanWeng.github.io/tree/master/assets/img/project/carousel/proj06_2.pdf)
+
 [Project code](https://github.com/HuanWeng/HuanWeng.github.io/tree/master/assets/img/project/carousel/proj06_3.pdf)
