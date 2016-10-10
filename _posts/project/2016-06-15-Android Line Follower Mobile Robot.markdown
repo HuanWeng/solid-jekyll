@@ -14,8 +14,10 @@ carousel:
 ---
 Android Line Follower Mobile Robot
 -----------------
-The goal of this project is applying some control theories on the experiment setup which consists of two parts: Allegro Hand and Optoforce force sensors. Currently I only mounted the force sensor on the index finger as shown in the figure above and realized joint position, contact force and impedance control.
+This project is an academic project. In this project I designed, fabricated, and programmed a mobile robot made of laser cut and 3D printed parts, which follows a Mario Kart circuit – for Northwestern’s Tech Cup 2016.
 
-For the control method, the joint position control is already developed in ROS package from Wonik Robotics. In the contact force control, I design an experiment to let the finger apply contact force on a horizontal plane and supposed that there’s no motion when applying force. I first calculated the Jacobian Matrix of the finger and used the dynamics equation to solve the relation between the torque of joints and the contact force on the fingertip, ignoring the acceleration and velocity terms in the equation. By doing these the feedforward loop was completed. Then I used the force data from Optoforce as a feedback to calibrate the contact force by PI control. The figures below show the results of contact force control.
+This robot can be devided into three parts: a android phone with its camera used to sense the line ahead, a PCB used to receive the data from the phone and send the PWM signals to the motor, and the vehicle to hold all the these parts.
 
-For the impedance control, currently I simplified the model by ignoring the mass and damper properties of the finger. So the whole finger was supposed to be like a virtual spring, as shown below, once setting the stiffness and the original position of the fingertip in 3 directions. This work is applied in other research experiments in my lab.
+While the robtot running on the map, the camera sense the area ahead the vehicle and identify the location of the line by check the RGB value from the screen of the camera. This information will be sent to PCB using serial communication and based on this, the PIC32 on that board executes differential control to the wheel speed of the vehiles, which is driven by two motors.
+
+Finally I get the first place in the competition, using 29 seconds to complete the circuit, while the average of the competiors is about 45 seconds. 
