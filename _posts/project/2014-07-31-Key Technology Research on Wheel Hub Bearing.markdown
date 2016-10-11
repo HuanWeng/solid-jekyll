@@ -8,6 +8,8 @@ img: portfolio_09.jpg
 carousel:
 - portfolio_09.jpg
 - proj09_1.jpg
+- proj09_2.jpg
+- proj09_3.jpg
 ---
 Key Technology Research on Wheel Hub Bearing
 -----------------

@@ -8,6 +8,8 @@ img: portfolio_05.gif
 carousel:
 - portfolio_05.gif
 - proj05_1.gif
+- proj05_2.jpg
+- proj05_3.jpg
 ---
 A Matlab Library for Robotic Manipulation
 -----------------
