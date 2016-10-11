@@ -20,9 +20,9 @@ For the control method, the joint position control is already developed in ROS p
 
 The figures below show the results of contact force control compared with the desired force changes. In these figures, X axis is time (second) and Y axis is force (Newton). We can see the errors clearly in the one-step force variation. The actual force spend about 0.15s to become stable, which is too slow for dynamic control experiments. Also the actual force change is slower than the desired change by about 0.025s. That is, in my point of view, the main cause of the poor performance of my force control, since it will influence the PID control I applied in the program. What's worse, it is sure that the delay is caused by hardware, so I can't do much to improve that. 
 
-![proj01_2](/assets/img/project/carousel/proj01_2.jpg)
+![proj01_2](/assets/img/project/carousel/proj01_2.png)
 
-![proj01_3](/assets/img/project/carousel/proj01_3.jpg)
+![proj01_3](/assets/img/project/carousel/proj01_3.png)
 
-![proj01_4](/assets/img/project/carousel/proj01_4.jpg)
+![proj01_4](/assets/img/project/carousel/proj01_4.png)
 
