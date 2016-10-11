@@ -19,4 +19,4 @@ We also built the experiment setup and analyzing the result of experiments with 
 
 ![proj02_1](/assets/img/project/carousel/proj02_1.jpg)
 
-I can show more details if I get the permit from my lab. 
+I can show more details if I get the permit from my lab.    
