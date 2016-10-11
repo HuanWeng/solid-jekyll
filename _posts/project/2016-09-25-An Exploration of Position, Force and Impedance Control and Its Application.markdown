@@ -8,9 +8,9 @@ img: portfolio_01.jpg
 carousel:
 - portfolio_01.jpg
 - proj01_1.jpg
-- proj01_2.jpg
-- proj01_3.jpg
-- proj01_4.jpg
+- proj01_2.png
+- proj01_3.png
+- proj01_4.png
 ---
 An Exploration of Position, Force and Impedance Control and Its Application
 -----------------
