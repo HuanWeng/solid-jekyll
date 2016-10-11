@@ -8,6 +8,8 @@ img: portfolio_04.png
 carousel:
 - portfolio_04.png
 - proj04_1.png
+- proj04_2.jpg
+- proj04_3.jpg
 ---
 DC Motor Control with PIC32 and Matlab
 -----------------
