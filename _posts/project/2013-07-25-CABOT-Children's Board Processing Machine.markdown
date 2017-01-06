@@ -16,7 +16,7 @@ carousel:
 ---
 CABOT: Children's Board Processing Machine
 -----------------
-The goal of this project is developing a new machine for children to make some puzzles from waste paper board all by themselves.
+The goal of this project is developing a new machine for children to make some puzzles from waste paper board all by themselves. 
 
 The project consists of concepts, design, manufacturing, and prototypoing. I'm mainly in charge of the design of CABOT, especially in Solidworks.
 
